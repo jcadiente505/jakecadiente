@@ -2,11 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import {AppBar, Typography, Toolbar, } from "@material-ui/core";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const styles = {
     root: {
         backgroundColor: "#03a9f4",
-        width: "100%"
+        width: "100%",
+        flexGrow: 1,
+    },
+    navHeader: {
+        fontFamily: "Lobster, cursive"
     }
 }
 
@@ -16,7 +21,7 @@ const Navbar = (props) => {
     <div >
         <AppBar position="sticky">
             <Toolbar className={classes.root}>
-                <Typography color="inherit" variant="headline">Jacob Cadiente</Typography>
+                <Typography color="inherit" variant="h4">Cadiente Designs</Typography>
             </Toolbar>
         </AppBar>
     </div>
